@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.1</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Confluent.Kafka" Version="2.0.0" />
+		<PackageReference Include="Confluent.Kafka.DependencyInjection" Version="2.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="7.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="7.0.0" />
+		<PackageReference Include="System.Text.Json" Version="7.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Tracker.BuildingBlocks.MessageHub.Abstractions\Tracker.BuildingBlocks.MessageHub.Abstractions.csproj" />
+	</ItemGroup>
+
+</Project>
