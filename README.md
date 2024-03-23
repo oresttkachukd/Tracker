@@ -20,7 +20,7 @@ CORS were enabled to be able to access to website from other websites where img 
 
 The IP address should be a mandatory value, but potential empty values are still sent to the Event hub topic for analysis purposes.
 
-To improve availability, service won't wait for Event hub aknowledge of the message. Messages will be batched locally on the server and sent asynchronously.
+To improve availability, service won't wait for Event hub aknowledge of the message. Messages will be batched locally on the server and sent asynchronously, it will improve availability, but may lead to lost events.
 
 ## Storage.Worker
 

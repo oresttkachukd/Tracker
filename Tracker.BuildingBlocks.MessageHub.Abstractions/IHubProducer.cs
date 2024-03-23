@@ -1,6 +1,4 @@
-﻿using System.Threading.Tasks;
-
-namespace Tracker.BuildingBlocks.MessageHub.Abstractions
+﻿namespace Tracker.BuildingBlocks.MessageHub.Abstractions
 {
     public interface IHubProducer
     {
