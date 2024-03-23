@@ -7,7 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.0" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tracker.BuildingBlocks.MessageHub.Abstractions\Tracker.BuildingBlocks.MessageHub.Abstractions.csproj" />
+    <ProjectReference Include="..\Tracker.BuildingBlocks.MessageHub.Kafka\Tracker.BuildingBlocks.MessageHub.Kafka.csproj" />
+    <ProjectReference Include="..\Tracker.Pixel.Contracts\Tracker.Pixel.Contracts.csproj" />
+    <ProjectReference Include="..\Tracker.Storage.Application\Tracker.Storage.Application.csproj" />
+    <ProjectReference Include="..\Tracker.Storage.Infrastructure\Tracker.Storage.Infrastructure.csproj" />
   </ItemGroup>
 </Project>

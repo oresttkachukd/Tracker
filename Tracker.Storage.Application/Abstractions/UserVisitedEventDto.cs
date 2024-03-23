@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace Tracker.Pixel.Contracts
+namespace Tracker.Storage.Application.Abstractions
 {
-    public class UserVisitedEvent
+    public class UserVisitedEventDto
     {
         public DateTime Timestamp { get; set; }
 

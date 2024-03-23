@@ -26,6 +26,8 @@ To improve availability, service won't wait for Event hub aknowledge of the mess
 
 Given that public access is not required for the storage service, a Worker type of instance was chosen. It utilizes a smaller runtime Docker base image for improved efficiency.
 
+The Storage service is kept simple by not introducing consumers at the application layer, and instead defining consume methods directly in the pipeline. An Onion architecture skeleton is set up and can be further developed later.
+
 ## Instructions
 
 To run solution following instructions can be used:
@@ -39,4 +41,13 @@ To override any settings, environment variables prefixed with TRACKER__ can be a
 
 ```bash
 TRACKER__KAFKA__SERVERS=["host.docker.internal:29092"]
+TRACKER__FILEEVENTSTORE_FILE=/tmp/events.log
 ```
+
+## Verification
+
+Kafka
+![Alt text for screenshot 1](/docs/Kafka.png)
+
+EventStore
+![Alt text for screenshot 2](/docs/EventStore.png)

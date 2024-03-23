@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 using System.Linq;
 using Microsoft.AspNetCore.Builder;
@@ -43,6 +44,7 @@ app.MapGet("/track", (HttpContext httpContext, IWebHostEnvironment environment, 
 
     producer.Produce(Topics.UserEvents, new UserVisitedEvent
     {
+        Timestamp = DateTime.UtcNow,
         Referrer = referrer,
         UserAgent = userAgent,
         IpAddress = ipAddress

@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tracker.Pixel.Service", "Tracker.Pixel.Service\Tracker.Pixel.Service.csproj", "{7DF55280-2369-4358-99F8-F6319B158378}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tracker.Pixel.Service", "Tracker.Pixel.Service\Tracker.Pixel.Service.csproj", "{7DF55280-2369-4358-99F8-F6319B158378}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tracker.Storage.Worker", "Tracker.Storage.Worker\Tracker.Storage.Worker.csproj", "{9ED05DDB-F191-4459-91CA-7FCA18A8F04E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tracker.Storage.Worker", "Tracker.Storage.Worker\Tracker.Storage.Worker.csproj", "{9ED05DDB-F191-4459-91CA-7FCA18A8F04E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01. Pixel", "01. Pixel", "{E154FFA0-B827-47D0-B747-D0FDC5200762}"
 EndProject
@@ -21,11 +21,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02. Storage", "02. Storage"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03. BuildingBlocks", "03. BuildingBlocks", "{2CDEEE43-6621-4D53-BBD6-DEB453F86F53}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tracker.Pixel.Contracts", "Tracker.Pixel.Contracts\Tracker.Pixel.Contracts.csproj", "{33DC2A97-F39E-4F55-996D-CAA888211876}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tracker.Pixel.Contracts", "Tracker.Pixel.Contracts\Tracker.Pixel.Contracts.csproj", "{33DC2A97-F39E-4F55-996D-CAA888211876}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tracker.BuildingBlocks.MessageHub.Abstractions", "Tracker.BuildingBlocks.MessageHub.Abstractions\Tracker.BuildingBlocks.MessageHub.Abstractions.csproj", "{6F6B9071-B440-4258-9EC9-BBB1B9B240E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tracker.BuildingBlocks.MessageHub.Abstractions", "Tracker.BuildingBlocks.MessageHub.Abstractions\Tracker.BuildingBlocks.MessageHub.Abstractions.csproj", "{6F6B9071-B440-4258-9EC9-BBB1B9B240E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tracker.BuildingBlocks.MessageHub.Kafka", "Tracker.BuildingBlocks.MessageHub.Kafka\Tracker.BuildingBlocks.MessageHub.Kafka.csproj", "{3B7C5001-C1F5-4D56-82BC-D32FE63F4994}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tracker.BuildingBlocks.MessageHub.Kafka", "Tracker.BuildingBlocks.MessageHub.Kafka\Tracker.BuildingBlocks.MessageHub.Kafka.csproj", "{3B7C5001-C1F5-4D56-82BC-D32FE63F4994}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tracker.Storage.Infrastructure", "Tracker.Storage.Infrastructure\Tracker.Storage.Infrastructure.csproj", "{6902D5D2-8757-4A47-ABCA-90E32A9C1AEE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tracker.Storage.Application", "Tracker.Storage.Application\Tracker.Storage.Application.csproj", "{D3AC2C96-20F9-408F-BC6D-89F13683AD69}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{B7A608E8-79BE-4A50-912C-3CFF85564E5D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +63,14 @@ Global
 		{3B7C5001-C1F5-4D56-82BC-D32FE63F4994}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B7C5001-C1F5-4D56-82BC-D32FE63F4994}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B7C5001-C1F5-4D56-82BC-D32FE63F4994}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6902D5D2-8757-4A47-ABCA-90E32A9C1AEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6902D5D2-8757-4A47-ABCA-90E32A9C1AEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6902D5D2-8757-4A47-ABCA-90E32A9C1AEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6902D5D2-8757-4A47-ABCA-90E32A9C1AEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3AC2C96-20F9-408F-BC6D-89F13683AD69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3AC2C96-20F9-408F-BC6D-89F13683AD69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3AC2C96-20F9-408F-BC6D-89F13683AD69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3AC2C96-20F9-408F-BC6D-89F13683AD69}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -67,6 +81,8 @@ Global
 		{33DC2A97-F39E-4F55-996D-CAA888211876} = {E154FFA0-B827-47D0-B747-D0FDC5200762}
 		{6F6B9071-B440-4258-9EC9-BBB1B9B240E1} = {2CDEEE43-6621-4D53-BBD6-DEB453F86F53}
 		{3B7C5001-C1F5-4D56-82BC-D32FE63F4994} = {2CDEEE43-6621-4D53-BBD6-DEB453F86F53}
+		{6902D5D2-8757-4A47-ABCA-90E32A9C1AEE} = {7039BF38-7E18-4DB5-A5E1-BDBAD50830A5}
+		{D3AC2C96-20F9-408F-BC6D-89F13683AD69} = {7039BF38-7E18-4DB5-A5E1-BDBAD50830A5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A1EC7B3C-E774-45A2-8949-898F4ADEEE5D}
