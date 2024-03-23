@@ -37,7 +37,7 @@ To run solution following instructions can be used:
 $ docker-compose up
 ```
 
-To override any settings, environment variables prefixed with TRACKER__ can be added to a .env file. For example:
+To override any settings, appsettings can be used or environment variables prefixed with TRACKER__ can be added to a .env file. For example:
 
 ```bash
 TRACKER__KAFKA__SERVERS=["host.docker.internal:29092"]
