@@ -1,0 +1,18 @@
+version: '3.4'
+
+services:
+  tracker.pixel.service:
+    image: ${DOCKER_REGISTRY-}trackerpixelservice
+    ports:
+      - 4000:80
+    build:
+      context: .
+      dockerfile: Tracker.Pixel.Service/Dockerfile
+
+  tracker.storage.worker:
+    image: ${DOCKER_REGISTRY-}trackerstorageworker
+    build:
+      context: .
+      dockerfile: Tracker.Storage.Worker/Dockerfile
+    volumes: 
+     - ./storage/:/tmp/

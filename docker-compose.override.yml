@@ -1,0 +1,18 @@
+version: '3.4'
+
+services:
+  tracker.pixel.service:
+    env_file:
+      - .env
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "80"
+
+  tracker.storage.worker:
+    env_file:
+      - .env
+    environment:
+      - DOTNET_ENVIRONMENT=Development
+    volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
